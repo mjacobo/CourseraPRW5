@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/card_padding"
+    android:paddingBottom="@dimen/card_padding"
+    android:paddingRight="@dimen/card_padding"
+    android:paddingTop="@dimen/card_padding"
+    android:background="@color/colorIconsText"
+    android:weightSum="3"
+    >
+
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/acivPetProfilePicture"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_layout_heigth"
+        android:cropToPadding="true"
+        android:src="@drawable/jiraff"
+        android:background="@color/colorPrimary"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:layout_weight="1"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/llProfileCard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_layout_heigth"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:paddingLeft="@dimen/card_padding"
+        android:paddingBottom="@dimen/card_padding"
+        android:paddingRight="@dimen/card_padding"
+        android:paddingTop="@dimen/card_padding"
+        android:background="@drawable/border"
+        android:layout_weight="1"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/actvProfileLikes"
+            android:layout_width="@dimen/image_layout_heigth"
+            android:layout_height="wrap_content"
+            android:text="@string/text_demo"
+            android:gravity="end"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorAccent"
+            android:background="@color/colorIconsText"
+            android:textSize="@dimen/text_label_size"
+            android:layout_weight="5"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/acivYellowBone"
+            android:layout_width="@dimen/image_layout_heigth"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_bone_yellow"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:cropToPadding="true"
+            android:layout_weight="5"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
